@@ -13,15 +13,22 @@
  *    Según la cantidad especificada utilice condicionales para solicitar la cantidad de nombres
  *    correctos.
 */
-function generarInvitados(cantidad){
+function generarInvitados(event){
+    let cantidad = parseInt(document.getElementById("cantidadInvitados").value);
+    let txt='';
+
     let listaInvitados = new Array();
     for (let i = 0; i < cantidad; i++) {
         listaInvitados[i] = prompt ('Ingrese el '+ (i+1) + '° invitado ');
         
     }
     
+    
     for (let i = 0; i < listaInvitados.length; i++){
-        console.log (listaInvitados[i]);
+        if (txt !== ''){
+            txt = txt + ', ';
+        }
+        txt = txt + listaInvitados[i];
     }
-
+    alert('Listad de invitados: ' + txt);
 }
