@@ -6,7 +6,22 @@
 
 // Ejercicios con funciones
 
-// function generarInvitados()
+function generarInvitados(){
+    let listaInvitados = new Array();
+    let txt= '';
+    for (let i = 0; i < 3; i++) {
+        listaInvitados[i] = prompt ('Ingrese el '+ (i+1) + '° invitado ');
+        
+    }
+    
+    for (let i = 0; i < listaInvitados.length; i++){
+        if (txt !== ''){
+            txt = txt + ', ';
+        }
+        txt = txt + listaInvitados[i];
+    }
+    return txt;
+}
 
 /*
 Alumno: Crear la función "generarInvitados"
@@ -30,5 +45,5 @@ en consola la lista
 */
 
 // Definir y crear la función antes de esta llamada
-invitados = generarInvitados();
+let invitados = generarInvitados();
 console.log(`Mis invitados: ${invitados}`)

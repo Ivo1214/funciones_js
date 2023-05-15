@@ -12,6 +12,7 @@ function promedio(numero1, numero2) {
     // de los dos números ingresados por parámetro 
     // Deberá calcular el promedio
     // y luego imprimir dicho valor en consola
+    return ('El promedio es: ' + (numero1+numero2)/2);
 }
 
-promedio(10, 5);
+console.log(promedio(10, 5));

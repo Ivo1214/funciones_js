@@ -12,3 +12,8 @@
  *    Debe recibir 5 números como argumento y calcular el promedio.  Debe reportar por
  *    medio de alert(); y console.log(); el detalle de los datos recibidos.
 */
+function promedio(a, b, c, d, e) {
+    let resultado = (a + b + c + d + e) / 5;
+    console.log ('El promedio de los numeros es: ' + resultado);
+    alert(`El promedio de los numeros ingresados es: ${resultado}`);
+}

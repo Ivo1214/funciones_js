@@ -11,6 +11,11 @@ function imprimirMayor(numero1, numero2) {
     // En esta función debe determinar cual de los dos
     // números ingresados por parámetro es mayor
     // y luego imprimir dicho valor en consola
+    if (numero1 > numero2) {
+        return ('El numero1 es mayor al numero2');
+    } else {
+        return ('El numero2 es mayor al numero1');
+    }
 }
 
-imprimirMayor(2, 10);
+console.log(imprimirMayor(2, 10));
